@@ -1,7 +1,8 @@
-def delivery_report(day,file_name):
-    {{{prints daily delivery report on the terminal}}}
+def delivery_report(day_number,file_name):
+    """prints daily delivery report on the terminal"""
+
     # print day of delivery on the terminal
-    print(day) 
+    print("Day", day_number) 
     # assigns variable 'the_file' to the contents of the file
     the_file = open(file_name)
     # loop through each line of the file
@@ -19,8 +20,8 @@ def delivery_report(day,file_name):
             count, melon, amount))
     the_file.close()
 # calls the delivery_report function for each day of delivery
-delivery_report("Day 1", "um-deliveries-20140519.txt")
-delivery_report("Day 2", "um-deliveries-20140520.txt")
-delivery_report("Day 3", "um-deliveries-20140521.txt")
+delivery_report(1, "um-deliveries-20140519.txt")
+delivery_report(2, "um-deliveries-20140520.txt")
+delivery_report(3, "um-deliveries-20140521.txt")
 
 
